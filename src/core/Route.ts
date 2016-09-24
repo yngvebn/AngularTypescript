@@ -1,3 +1,5 @@
+import * as ng from 'angular';
+
 /**
   * Registers a route for a component.
   * Properties in component bindings can be registered as resolves. The template will not be loaded until all promises in the resolves are completed.
@@ -5,7 +7,7 @@
  * @param {angular.ui.IState} stateConfiguration Configuration-properties for the state. Normally only the url is necessary, as well as resolves
  * 
 */
-function Route(module: angular.IModule, stateConfiguration: angular.ui.IState) {
+function Route(module: ng.IModule, stateConfiguration: ng.ui.IState) {
     return (component: any) => {
         if (!component.name) {
             component.name = component.toString().match(/^function\s*([^\s(]+)/)[1];

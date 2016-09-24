@@ -42,4 +42,5 @@ gulp.task('scripts:vendor',
     });
 
 
+gulp.task('build', ['scripts:app', 'scripts:vendor']);
 gulp.task('default', ['scripts:app', 'scripts:vendor']);

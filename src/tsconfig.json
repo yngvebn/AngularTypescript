@@ -9,7 +9,11 @@
     "removeComments": false,
     "noImplicitAny": false
   },
-  "exclude": [
-    "node_modules"
-  ]
+  "include": [
+      "/**/*.ts"
+  ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
 }

@@ -1,4 +1,6 @@
-function Component(module: angular.IModule, options: {
+import * as ng from 'angular';
+
+function Component(module: ng.IModule, options: {
     controllerAs?: string,
     template?: string,
     templates?: IResonsiveTemplates,
