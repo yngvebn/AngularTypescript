@@ -1,3 +1,6 @@
+@Route(Demo.module, {
+    url: '/'
+})
 @Component(Demo.module, {
     templateUrl: "/app/Home/Home.tpl.html"
 })
